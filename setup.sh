@@ -75,12 +75,12 @@ read -p "root@wormgpt:~# " choice
 case $choice in
     1)
         echo -e "\n${RED}>> Initializing CLI...${NC}"
-        python3 ai.py
+        python3 worm-gpt.py
         ;;
     2)
         echo -e "\n${RED}>> Initializing GUI Protocol...${NC}"
         # Termux specific flag to run headless if needed, but standard run works for localhost
-        streamlit run gui.py
+        streamlit run worm-gpt-web.py
         ;;
     *)
         echo -e "\n${CYAN}Setup Complete. To run manually:${NC}"
